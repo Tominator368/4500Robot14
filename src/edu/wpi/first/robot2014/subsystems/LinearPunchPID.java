@@ -6,6 +6,7 @@
 package edu.wpi.first.robot2014.subsystems;
 
 import edu.wpi.first.robot2014.RobotMap;
+import edu.wpi.first.wpilibj.DigitalInput;
 import edu.wpi.first.wpilibj.Solenoid;
 import edu.wpi.first.wpilibj.Victor;
 import edu.wpi.first.wpilibj.command.PIDSubsystem;
@@ -22,6 +23,8 @@ public class LinearPunchPID extends PIDSubsystem {
     
     Solenoid fireCylinder = new Solenoid(RobotMap.fireSolenoidPort);
     Victor wenchMotor = new Victor(RobotMap.wenchMotorPort);
+    DigitalInput punchLimitSwitch = new DigitalInput(
+            RobotMap.punchLimitSwitchPort);
 
     // Initialize your subsystem here
     public LinearPunchPID() {

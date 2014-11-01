@@ -13,8 +13,6 @@ public class CompressorDeactivate extends CommandBase {
     
     public CompressorDeactivate() {
         requires(pneumaticCharge);
-        
-      
     }
 
     // Called just before this Command runs the first time

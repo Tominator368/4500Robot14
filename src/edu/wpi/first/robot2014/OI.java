@@ -1,6 +1,7 @@
 
 package edu.wpi.first.robot2014;
 
+import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.DigitalIOButton;
 
@@ -9,7 +10,29 @@ import edu.wpi.first.wpilibj.buttons.DigitalIOButton;
  * interface to the commands and command groups that allow control of the robot.
  */
 public class OI {
-    //// CREATING BUTTONS
+    
+    Joystick driveStick = new Joystick(1);
+    
+    public double getLeftSpeed() {
+        return driveStick.getY();
+    }
+    
+    public double getRightSpeed() {
+        return driveStick.getY();
+    }
+    
+    public double getTwist() {
+        return driveStick.getZ();
+    }
+    
+
+
+
+
+
+
+
+//// CREATING BUTTONS
     // One type of button is a joystick button which is any button on a joystick.
     // You create one by telling it which joystick it's on and which button
     // number it is.

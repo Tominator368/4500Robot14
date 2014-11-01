@@ -7,11 +7,11 @@ package edu.wpi.first.robot2014.commands;
 
 /**
  *
- * @author DE
+ * @author Thomas
  */
-public class StartWenchMotor extends CommandBase {
+public class DriveWithJoystick extends CommandBase {
     
-    public StartWenchMotor() {
+    public DriveWithJoystick() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     }
@@ -22,6 +22,9 @@ public class StartWenchMotor extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+        drivetrain.mecanumDrive(
+                oi.getLeftSpeed(), oi.getRightSpeed(), oi.getTwist());
+
     }
 
     // Make this return true when this Command no longer needs to run execute()

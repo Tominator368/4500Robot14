@@ -9,6 +9,8 @@ package edu.wpi.first.robot2014;
 public class RobotMap {
     
     //All port #s on the sidecar defined here with descriptive variable names
+    //NOTE: These are all currently WRONG! Placeholder values have been added
+    //for organizational purposes, and will need to be updated later.
     public static final int
             flMotorPort = 1,
             frMotorPort = 2,
@@ -20,7 +22,8 @@ public class RobotMap {
             compressorPort2 = 8,
             fireSolenoidPort = 9,
             clawSolenoidPort = 10,
-            clawMovementMotorPort = 11;
+            clawMovementMotorPort = 11,
+            punchLimitSwitchPort = 12;
     
   
 }

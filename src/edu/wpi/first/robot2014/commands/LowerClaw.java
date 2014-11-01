@@ -12,8 +12,7 @@ package edu.wpi.first.robot2014.commands;
 public class LowerClaw extends CommandBase {
     
     public LowerClaw() {
-        // Use requires() here to declare subsystem dependencies
-        // eg. requires(chassis);
+        requires(clawMovement);
     }
 
     // Called just before this Command runs the first time
