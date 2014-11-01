@@ -6,6 +6,8 @@
 package edu.wpi.first.robot2014.subsystems;
 
 import edu.wpi.first.robot2014.RobotMap;
+import edu.wpi.first.robot2014.commands.ClawDoNothing;
+import edu.wpi.first.wpilibj.AnalogChannel;
 import edu.wpi.first.wpilibj.Victor;
 import edu.wpi.first.wpilibj.command.PIDSubsystem;
 
@@ -20,6 +22,8 @@ public class ClawMovementPID extends PIDSubsystem {
     private static final double Kd = 0.0;
     
     Victor clawMover = new Victor(RobotMap.clawMovementMotorPort);
+    AnalogChannel clawPotentiometer = new AnalogChannel(
+            RobotMap.clawPotentiometerPort);
 
     // Initialize your subsystem here
     public ClawMovementPID() {
@@ -32,8 +36,7 @@ public class ClawMovementPID extends PIDSubsystem {
     }
     
     public void initDefaultCommand() {
-        // Set the default command for a subsystem here.
-        //setDefaultCommand(new MySpecialCommand());
+        setDefaultCommand(new ClawDoNothing());
     }
     
     protected double returnPIDInput() {
@@ -46,5 +49,13 @@ public class ClawMovementPID extends PIDSubsystem {
     protected void usePIDOutput(double output) {
         // Use output to drive your system, like a motor
         // e.g. yourMotor.set(output);
+    }
+    
+    public void moveUp() {
+        clawMover.set(RobotMap.clawMoverSpeed);
+    }
+    
+    public void moveDown() {
+        clawMover.set(-1 * RobotMap.clawMoverSpeed);
     }
 }

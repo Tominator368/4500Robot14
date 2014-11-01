@@ -7,14 +7,12 @@ package edu.wpi.first.robot2014.commands;
 
 /**
  *
- * @author DE
+ * @author Thomas
  */
-public class CompressFireCylinder extends CommandBase {
+public class UpperClawOpen extends CommandBase {
     
-    public CompressFireCylinder() {
-
-    requires(linearPunch);
-     
+    public UpperClawOpen() {
+        requires(upperClaw);
     }
 
     // Called just before this Command runs the first time
@@ -23,12 +21,10 @@ public class CompressFireCylinder extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-        linearPunch.compressFireCylinder();
+        upperClaw.openClaw();
     }
 
     // Make this return true when this Command no longer needs to run execute()
-    
-    //Automatically returns true after one cycle (it only needs to compress once)
     protected boolean isFinished() {
         return true;
     }

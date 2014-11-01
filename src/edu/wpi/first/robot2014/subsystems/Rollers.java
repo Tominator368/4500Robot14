@@ -6,6 +6,7 @@
 package edu.wpi.first.robot2014.subsystems;
 
 import edu.wpi.first.robot2014.RobotMap;
+import edu.wpi.first.robot2014.commands.RollersDoNothing;
 import edu.wpi.first.wpilibj.Relay;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
@@ -22,6 +23,14 @@ public class Rollers extends Subsystem {
 
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
-        //setDefaultCommand(new MySpecialCommand());
+        setDefaultCommand(new RollersDoNothing());
+    }
+    
+    public void roll() {
+        rollerController.set(Relay.Value.kForward);
+    }
+    
+    public void rollersDoNothing() {
+        rollerController.set(Relay.Value.kOff);
     }
 }

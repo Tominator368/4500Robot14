@@ -22,10 +22,12 @@ public class CompressorActivate extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+        pneumaticCharge.activate();
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
+        //May need to return true when a certain pressure is reached
         return false;
     }
 

@@ -11,6 +11,8 @@ import edu.wpi.first.wpilibj.buttons.DigitalIOButton;
  */
 public class OI {
     
+    //TODO: Create a constructor (public OI() {}) and bind buttons to commands
+    
     Joystick driveStick = new Joystick(1);
     
     public double getLeftSpeed() {

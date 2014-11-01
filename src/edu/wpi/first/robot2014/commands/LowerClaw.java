@@ -21,10 +21,12 @@ public class LowerClaw extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+        clawMovement.moveDown();
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
+        //TODO: Set to true when potentiometer reaches lower bound
         return false;
     }
 

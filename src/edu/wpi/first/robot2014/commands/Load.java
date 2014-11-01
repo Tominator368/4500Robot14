@@ -10,7 +10,7 @@ package edu.wpi.first.robot2014.commands;
  * @author Thomas
  */
 public class Load extends CommandBase {
-    //command will start the wench motor and stop it upon hitting the limit switch
+    //command starts the wench motor and stops it upon hitting the limit switch
     public Load() {
         requires(linearPunch);
     }
@@ -21,11 +21,12 @@ public class Load extends CommandBase {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+        linearPunch.turnWenchMotor();
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return false;
+        return linearPunch.limitSwitchState();
     }
 
     // Called once after isFinished returns true

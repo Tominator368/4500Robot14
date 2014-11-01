@@ -49,4 +49,15 @@ public class PneumaticChargePID extends PIDSubsystem {
         // Use output to drive your system, like a motor
         // e.g. yourMotor.set(output);
     }
+    
+    public void activate() {
+        pump.start(); //I think the start method starts the pump...? I'd assume...
+    }
+    
+    public void deactivate() {
+        pump.stop();
+    }
+    //We need a way to measure the pressure gauge, not sure how to do that
+    
+    
 }
