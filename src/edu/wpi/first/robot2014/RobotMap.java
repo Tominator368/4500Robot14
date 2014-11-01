@@ -35,6 +35,7 @@ public class RobotMap {
     public static final double
             wenchMotorSpeed = 0.1,
             clawMoverSpeed = 0.1;
+    public static final double clawTolerance = .5; //Potentiometer tolerance - WRONG
     
   
 }

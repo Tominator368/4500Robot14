@@ -16,6 +16,10 @@ import edu.wpi.first.wpilibj.command.PIDSubsystem;
  *
  * @author DE
  */
+//*****************************************************************************
+//OLD CLASS, MOVED TO "LinearPunch.java" because it shouldn't actually use PID
+//*****************************************************************************
+
 public class LinearPunchPID extends PIDSubsystem {
 
     private static final double Kp = 0.0;

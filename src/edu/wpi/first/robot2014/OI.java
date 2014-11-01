@@ -1,9 +1,16 @@
 
 package edu.wpi.first.robot2014;
 
+import edu.wpi.first.robot2014.commands.AimClaw;
+import edu.wpi.first.robot2014.commands.Fire;
+import edu.wpi.first.robot2014.commands.RollersDoNothing;
+import edu.wpi.first.robot2014.commands.RollersRoll;
+import edu.wpi.first.robot2014.subsystems.ClawMovementPID;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.buttons.Button;
 import edu.wpi.first.wpilibj.buttons.DigitalIOButton;
+import edu.wpi.first.wpilibj.buttons.JoystickButton;
+import edu.wpi.first.wpilibj.buttons.Trigger;
 
 /**
  * This class is the glue that binds the controls on the physical operator
@@ -11,9 +18,24 @@ import edu.wpi.first.wpilibj.buttons.DigitalIOButton;
  */
 public class OI {
     
-    //TODO: Create a constructor (public OI() {}) and bind buttons to commands
-    
     Joystick driveStick = new Joystick(1);
+    
+    Button b1 = new JoystickButton(driveStick, 1),
+            b2 = new JoystickButton(driveStick, 2),
+            b3 = new JoystickButton(driveStick, 3),
+            b4 = new JoystickButton(driveStick, 4);
+    
+    Trigger mainTrigger = new JoystickButton(driveStick, 1);
+    
+    public OI() {
+        mainTrigger.whenActive(new Fire());
+        
+        b1.whenPressed(new AimClaw(ClawMovementPID.HIGHPOSITION));
+        b2.whenPressed(new AimClaw(ClawMovementPID.LOWPOSITION));
+        b3.whenPressed(new RollersRoll());
+        b4.whenPressed(new RollersDoNothing());
+    }
+    
     
     public double getLeftSpeed() {
         return driveStick.getY();

@@ -1,15 +1,15 @@
 package edu.wpi.first.robot2014.commands;
 
-import edu.wpi.first.wpilibj.command.Command;
-import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 import edu.wpi.first.robot2014.OI;
 import edu.wpi.first.robot2014.subsystems.ClawMovementPID;
 import edu.wpi.first.robot2014.subsystems.Drivetrain;
 import edu.wpi.first.robot2014.subsystems.ExampleSubsystem;
-import edu.wpi.first.robot2014.subsystems.LinearPunchPID;
+import edu.wpi.first.robot2014.subsystems.LinearPunch;
 import edu.wpi.first.robot2014.subsystems.PneumaticChargePID;
 import edu.wpi.first.robot2014.subsystems.Rollers;
 import edu.wpi.first.robot2014.subsystems.UpperClaw;
+import edu.wpi.first.wpilibj.command.Command;
+import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
 
 /**
  * The base for all commands. All atomic commands should subclass CommandBase.
@@ -24,7 +24,7 @@ public abstract class CommandBase extends Command {
     public static ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
     public static ClawMovementPID clawMovement = new ClawMovementPID();
     public static Drivetrain drivetrain = new Drivetrain();
-    public static LinearPunchPID linearPunch = new LinearPunchPID();
+    public static LinearPunch linearPunch = new LinearPunch();
     public static PneumaticChargePID pneumaticCharge = new PneumaticChargePID();
     public static Rollers rollers = new Rollers();
     public static UpperClaw upperClaw = new UpperClaw();
