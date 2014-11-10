@@ -11,7 +11,8 @@ public class RobotMap {
     //All port #s on the sidecar defined here with descriptive variable names
     //NOTE: These are all currently WRONG! Placeholder values have been added
     //for organizational purposes, and will need to be updated later.
-    //we may also need to add a module # for each one of these
+    //we may also need to add a module # for every one of these if we need
+    //multiple sidecars or if the cRIO ports work differently than I think
     public static final int
             flMotorPort = 1,
             frMotorPort = 2,

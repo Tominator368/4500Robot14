@@ -5,7 +5,8 @@ import edu.wpi.first.robot2014.subsystems.ClawMovementPID;
 import edu.wpi.first.robot2014.subsystems.Drivetrain;
 import edu.wpi.first.robot2014.subsystems.ExampleSubsystem;
 import edu.wpi.first.robot2014.subsystems.LinearPunch;
-import edu.wpi.first.robot2014.subsystems.PneumaticChargePID;
+import edu.wpi.first.robot2014.subsystems.PneumaticCharge;
+//import edu.wpi.first.robot2014.subsystems.PneumaticChargePID;
 import edu.wpi.first.robot2014.subsystems.Rollers;
 import edu.wpi.first.robot2014.subsystems.UpperClaw;
 import edu.wpi.first.wpilibj.command.Command;
@@ -25,7 +26,7 @@ public abstract class CommandBase extends Command {
     public static ClawMovementPID clawMovement = new ClawMovementPID();
     public static Drivetrain drivetrain = new Drivetrain();
     public static LinearPunch linearPunch = new LinearPunch();
-    public static PneumaticChargePID pneumaticCharge = new PneumaticChargePID();
+    public static PneumaticCharge pneumaticCharge = new PneumaticCharge();
     public static Rollers rollers = new Rollers();
     public static UpperClaw upperClaw = new UpperClaw();
 

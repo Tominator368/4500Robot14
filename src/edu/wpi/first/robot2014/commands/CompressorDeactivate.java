@@ -11,6 +11,11 @@ package edu.wpi.first.robot2014.commands;
  */
 public class CompressorDeactivate extends CommandBase {
     
+    //*************************************************************************
+    //CLASS LIKELY UNNECCESSARY! The compressor should just turn itself off at
+    //a certain pressure. Leaving it here just in case.
+    //*************************************************************************
+    
     public CompressorDeactivate() {
         requires(pneumaticCharge);
     }

@@ -16,8 +16,8 @@ import edu.wpi.first.robot2014.commands.CommandBase;
 import edu.wpi.first.robot2014.commands.ExampleCommand;
 import edu.wpi.first.robot2014.subsystems.ClawMovementPID;
 import edu.wpi.first.robot2014.subsystems.Drivetrain;
-import edu.wpi.first.robot2014.subsystems.LinearPunchPID;
-import edu.wpi.first.robot2014.subsystems.PneumaticChargePID;
+import edu.wpi.first.robot2014.subsystems.LinearPunch;
+import edu.wpi.first.robot2014.subsystems.PneumaticCharge;
 import edu.wpi.first.robot2014.subsystems.Rollers;
 import edu.wpi.first.robot2014.subsystems.UpperClaw;
 

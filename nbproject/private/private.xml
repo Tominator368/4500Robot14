@@ -2,33 +2,6 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/commands/DriveWithJoystick.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/commands/ExampleCommand.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/subsystems/Rollers.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/subsystems/Drivetrain.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/Robot2014.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/commands/UpperClawOpen.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/commands/ClawDoNothing.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/commands/RollersRoll.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/subsystems/LinearPunchPID.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/subsystems/ExampleSubsystem.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/commands/RollersDoNothing.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/commands/Load.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/OI.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/commands/CompressFireCylinder.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/commands/CompressorActivate.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/subsystems/ClawMovementPID.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/subsystems/PneumaticChargePID.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/commands/LowerClaw.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/subsystems/UpperClaw.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/commands/CompressorDeactivate.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/commands/CommandBase.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/commands/Fire.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/commands/ExpandFireCylinder.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/commands/AimClaw.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/commands/UpperClawClose.java</file>
-            <file>file:/C:/Users/Thomas/Documents/NetBeansProjects/4500-2015/4500Robot14/4500Robot14/src/edu/wpi/first/robot2014/RobotMap.java</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
