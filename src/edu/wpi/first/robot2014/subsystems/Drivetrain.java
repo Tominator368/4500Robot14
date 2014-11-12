@@ -8,7 +8,7 @@ package edu.wpi.first.robot2014.subsystems;
 import edu.wpi.first.robot2014.RobotMap;
 import edu.wpi.first.robot2014.commands.DriveWithJoystick;
 import edu.wpi.first.wpilibj.RobotDrive;
-import edu.wpi.first.wpilibj.Talon;
+//import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
 /**
@@ -26,7 +26,7 @@ public class Drivetrain extends Subsystem {
     Talon brMotor = new Talon(RobotMap.brMotorPort);
     */
     
-    private RobotDrive drive = new RobotDrive(
+    private final RobotDrive drive = new RobotDrive(
             RobotMap.flMotorPort,
             RobotMap.frMotorPort,
             RobotMap.blMotorPort,

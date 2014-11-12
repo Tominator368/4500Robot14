@@ -3,7 +3,6 @@ package edu.wpi.first.robot2014.commands;
 import edu.wpi.first.robot2014.OI;
 import edu.wpi.first.robot2014.subsystems.ClawMovementPID;
 import edu.wpi.first.robot2014.subsystems.Drivetrain;
-import edu.wpi.first.robot2014.subsystems.ExampleSubsystem;
 import edu.wpi.first.robot2014.subsystems.LinearPunch;
 import edu.wpi.first.robot2014.subsystems.PneumaticCharge;
 //import edu.wpi.first.robot2014.subsystems.PneumaticChargePID;
@@ -22,7 +21,6 @@ public abstract class CommandBase extends Command {
 
     public static OI oi;
     // Create a single static instance of all of your subsystems
-    public static ExampleSubsystem exampleSubsystem = new ExampleSubsystem();
     public static ClawMovementPID clawMovement = new ClawMovementPID();
     public static Drivetrain drivetrain = new Drivetrain();
     public static LinearPunch linearPunch = new LinearPunch();
@@ -39,7 +37,7 @@ public abstract class CommandBase extends Command {
         oi = new OI();
 
         // Show what command your subsystem is running on the SmartDashboard
-        SmartDashboard.putData(exampleSubsystem);
+        //SmartDashboard.putData(exampleSubsystem);
     }
 
     public CommandBase(String name) {

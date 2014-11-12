@@ -15,14 +15,10 @@ import edu.wpi.first.wpilibj.command.Subsystem;
  * @author DE
  */
 public class Rollers extends Subsystem {
-  
-
-    
-    
+    //Spike motor controller:
     Relay rollerController = new Relay(RobotMap.rollerMotorPort);
 
     public void initDefaultCommand() {
-        // Set the default command for a subsystem here.
         setDefaultCommand(new RollersDoNothing());
     }
     

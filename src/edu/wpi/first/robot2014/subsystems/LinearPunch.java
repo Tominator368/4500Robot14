@@ -17,8 +17,6 @@ import edu.wpi.first.wpilibj.command.Subsystem;
  * @author Thomas
  */
 public class LinearPunch extends Subsystem {
-    // Put methods for controlling this subsystem
-    // here. Call these from Commands.
     Solenoid fireCylinderExpand = new Solenoid(RobotMap.fireSolenoidPort);
     Solenoid fireCylinderContract = new Solenoid(RobotMap.fireSolenoidPort2);
     Victor wenchMotor = new Victor(RobotMap.wenchMotorPort);
